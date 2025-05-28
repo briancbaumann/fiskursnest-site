@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Support – Fiskurs Nest</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header>
+  <a href="index.html" class="logo-link">
+    <img src="fiskur-logo-txt-rght.png" alt="Fiskurs Nest Logo" class="logo">
+  </a>
+  <nav class="nav-links">
+    <a href="support.html">Support</a>
+    <a href="privacy.html">Privacy</a>
+  </nav>
+</header>
+
+  <main>
+    <h2>Support</h2>
+    <p>If you have any questions or need help, please fill out the form below or email us directly at <a href="mailto:support@fiskursnest.com">support@fiskursnest.com</a>.</p>
+
+    <form id="supportForm" onsubmit="sendEmail(event)">
+      <label for="name">Your Name:</label><br />
+      <input type="text" id="name" name="name" required /><br /><br />
+
+      <label for="email">Your Email:</label><br />
+      <input type="email" id="email" name="email" required /><br /><br />
+
+      <label for="message">Your Message:</label><br />
+      <textarea id="message" name="message" rows="5" required></textarea><br /><br />
+
+      <button type="submit">Send Message</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Fiskurs Nest LLC</p>
+  </footer>
+
+  <script>
+    function sendEmail(event) {
+      event.preventDefault();
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+
+      const subject = encodeURIComponent("Support Request from " + name);
+      const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
+      window.location.href = `mailto:support@fiskursnest.com?subject=${subject}&body=${body}`;
+    }
+  </script>
+</body>
+</html>

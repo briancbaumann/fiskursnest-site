@@ -1,0 +1,69 @@
+/* styles.css */
+
+/* Reset body and layout */
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: linear-gradient(to bottom, #ffffff, #e0f3f1);
+  color: #333;
+}
+
+/* Header with vertical gradient and wider padding */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* changed from space-between */
+  padding: 2rem 5%;
+  background: linear-gradient(to bottom, #ffffff, #e0f3f1);
+  gap: 2rem; /* add spacing between logo and links */
+}
+
+/* Larger logo */
+.logo {
+  height: 80px;
+}
+
+/* Navigation links */
+.nav-links a {
+  margin-left: 2rem;
+  text-decoration: none;
+  color: #004d4d;
+  font-weight: bold;
+  transition: color 0.3s;
+  font-size: 1rem;
+}
+
+.nav-links a:hover {
+  color: #009999;
+}
+
+/* Main content with increased side margins */
+main {
+  padding: 3rem 10%;
+}
+
+/* Sections */
+section {
+  margin-bottom: 2.5rem;
+}
+
+h2 {
+  color: #004d4d;
+  border-bottom: 2px solid #cceae7;
+  padding-bottom: 0.25rem;
+}
+
+/* Footer with background color and padding */
+footer {
+  background-color: #e0f3f1;
+  text-align: center;
+  padding: 1.5rem 10%;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* Logo link styling */
+a.logo-link {
+  display: flex;
+  align-items: center;
+}
