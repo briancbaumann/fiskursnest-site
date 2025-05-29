@@ -2,50 +2,163 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fiskurs Nest</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    .hero {
+      background: linear-gradient(to bottom, #e0f3f1, #ffffff);
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #008080;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto 2rem;
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background-color: #008080;
+      color: #fff;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.3s;
+    }
+
+    .cta-button:hover {
+      background-color: #006666;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 3rem 2rem;
+      background-color: #f8fdfc;
+    }
+
+    .feature-box {
+      flex: 1 1 220px;
+      max-width: 300px;
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    .feature-box h3 {
+      color: #008080;
+      margin-bottom: 0.5rem;
+    }
+
+    .highlight-product {
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    .highlight-product img {
+      max-width: 120px;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+
+    .highlight-product h2 {
+      color: #008080;
+      margin-bottom: 0.5rem;
+    }
+
+    .highlight-product p {
+      max-width: 600px;
+      margin: 0 auto 1.5rem;
+    }
+
+    .about {
+      padding: 3rem 2rem;
+      text-align: center;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .about h2 {
+      color: #008080;
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      background-color: #e0f3f1;
+      padding: 2rem 4vw;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
 </head>
 <body>
 <header>
-  <a href="index.html" class="logo-link">
-    <img src="fiskur-logo-txt-rght.png" alt="Fiskurs Nest Logo" class="logo">
+  <a href="index.html">
+    <img src="fiskur-logo-no-txt.png" alt="Fiskurs Nest logo" />
   </a>
-  <nav class="nav-links">
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
     <a href="support.html">Support</a>
-    <a href="privacy.html">Privacy</a>
+    <a href="privacy.html">Privacy Policy</a>
   </nav>
 </header>
 
-  <main>
-    <section class="hero">
-      <h2>Imaginative Learning Experiences</h2>
-      <p>At Fiskurs Nest, we craft educational apps that inspire curiosity and foster exploration for learners of all ages.</p>
-    </section>
+<main>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Imagination. Discovery. Wonder.</h1>
+    <p>Fiskurs Nest makes magical, screen-time-positive apps that spark creativity in kids through storytelling and play.</p>
+    <a href="products.html" class="cta-button">Explore Our Apps</a>
+  </section>
 
-    <section class="features">
-      <div class="feature">
-        <h3>Creative Storytelling</h3>
-        <p>Engaging narratives that captivate young minds and encourage learning through play.</p>
-      </div>
-      <div class="feature">
-        <h3>Interactive Design</h3>
-        <p>User-friendly interfaces that make navigation intuitive and enjoyable.</p>
-      </div>
-      <div class="feature">
-        <h3>Safe Environment</h3>
-        <p>Privacy-focused applications with no data collection, ensuring a secure experience.</p>
-      </div>
-    </section>
+  <!-- Featured Product -->
+  <section class="highlight-product">
+    <img src="storytime-icon.png" alt="Fiskur's StoryTime icon" />
+    <h2>Fiskur's StoryTime</h2>
+    <p>Create magical, narrated adventures your child will love — again and again! With just a few taps, they can build custom stories filled with characters, silly props, and fun settings. Narrator voices bring it all to life!</p>
+    <a href="products.html" class="cta-button">Learn More</a>
+  </section>
 
-    <section class="about">
-      <h2>About Us</h2>
-      <p>Fiskurs Nest is a creative studio dedicated to developing innovative educational applications. Our mission is to blend imagination with learning, providing tools that support growth and discovery for children and the young at heart.</p>
-    </section>
-  </main>
+  <!-- Feature Pillars -->
+  <section class="features">
+    <div class="feature-box">
+      <h3>Safe & Ad-Free</h3>
+      <p>No ads, no tracking — just pure, focused fun designed with kids in mind.</p>
+    </div>
+    <div class="feature-box">
+      <h3>Creative Tools</h3>
+      <p>Encourage storytelling, literacy, and imagination through intuitive design.</p>
+    </div>
+    <div class="feature-box">
+      <h3>Offline Friendly</h3>
+      <p>Our apps work anywhere — no Wi-Fi required once installed.</p>
+    </div>
+  </section>
 
-  <footer>
-    <p>&copy; 2025 Fiskurs Nest LLC. All rights reserved.</p>
-  </footer>
+  <!-- About -->
+  <section class="about">
+    <h2>About Fiskurs Nest</h2>
+    <p>We’re a small creative studio on a big mission: helping children build confidence, curiosity, and storytelling skills through magical digital experiences. Everything we make is designed with care, imagination, and respect for young minds.</p>
+  </section>
+</main>
+
+<footer>
+  &copy; Fiskurs Nest LLC – Imagination. Discovery. Wonder.
+</footer>
 </body>
 </html>
