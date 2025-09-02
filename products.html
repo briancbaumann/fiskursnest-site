@@ -6,50 +6,68 @@
   <title>Products – Fiskurs Nest</title>
   <link rel="stylesheet" href="styles.css" />
   <style>
-    .product-section {
+    .product-summary {
       display: flex;
       flex-direction: column;
       gap: 2rem;
       margin-top: 2rem;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
-    .product-text {
-      max-width: 700px;
-      margin: auto;
-    }
-
-    .product-images {
+    .product-card {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      align-items: flex-start;
       gap: 1rem;
-    }
-
-    .product-images img {
-      width: 100%;
-      max-width: 180px;
-      height: auto;
+      padding: 1rem;
       border-radius: 12px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      background: #fff;
+      transition: transform 0.2s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .product-card img {
+      width: 80px;
+      height: 80px;
+      border-radius: 16px;
       object-fit: contain;
+      flex-shrink: 0;
     }
 
-    .product-heading {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      margin-bottom: 1rem;
+    .product-info h2 {
+      margin: 0;
+      font-size: 1.25rem;
     }
 
-    .product-heading img {
-      width: 64px;
-      height: 64px;
+    .product-info a {
+      text-decoration: none;
+      color: #0073e6;
     }
 
-    @media (max-width: 768px) {
-      .product-heading img {
-        width: 48px;
-        height: 48px;
+    .product-info a:hover {
+      text-decoration: underline;
+    }
+
+    .product-info p {
+      margin: 0.5rem 0 0;
+      color: #444;
+    }
+
+    @media (max-width: 600px) {
+      .product-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .product-card img {
+        width: 72px;
+        height: 72px;
       }
     }
   </style>
@@ -72,31 +90,23 @@
       <h1>Our Products</h1>
     </section>
 
-    <section class="product-section">
-      <div class="product-text">
-        <div class="product-heading">
-          <img src="storytime-icon.jpg" alt="StoryTime App Icon" />
-          <h2>Fiskur's StoryTime</h2>
+    <section class="product-summary">
+      <!-- StoryTime -->
+      <div class="product-card">
+        <img src="storytime-icon.png" alt="StoryTime App Icon" />
+        <div class="product-info">
+          <h2><a href="storyTimeProduct.html">Fisher's Story Time</a></h2>
+          <p>Create magical, narrated adventures with customizable characters, silly items, and fun settings. Every story comes alive with expressive narration in a safe, ad-free space.</p>
         </div>
-        <p>
-          Create magical, narrated adventures your child will love — again and again!<br><br>
-          With just a few taps, kids can build their own custom stories by picking favorite characters, choosing silly items like bubble blasters or banana phones, and setting the stage for fun in magical forests, outer space, or even on a submarine.
-        </p>
-        <p>
-          Once the story is ready, it’s brought to life with expressive voice narration. Kids can choose from a variety of narrator voices in the app settings to match their mood or favorite style. Whether your child wants to read along, listen quietly, or imagine their own twists, every story becomes a unique experience.
-        </p>
-        <ul>
-          <li>Create stories in seconds with customizable characters, settings, and props</li>
-          <li>Narrated playback with voice options kids can choose</li>
-          <li>Replay favorite stories from each character’s story library</li>
-          <li>Encourages imagination and storytelling skills</li>
-          <li>Safe, ad-free environment made just for kids</li>
-        </ul>
       </div>
-      <div class="product-images">
-        <img src="storytime-1.jpg" alt="StoryTime Screenshot 1" />
-        <img src="storytime-2.jpg" alt="StoryTime Screenshot 2" />
-        <img src="storytime-3.jpg" alt="StoryTime Screenshot 3" />
+
+      <!-- Water Wonder -->
+      <div class="product-card">
+        <img src="WaterWonderImages/waterreveal.png" alt="Water Wonder App Icon" />
+        <div class="product-info">
+          <h2><a href="waterWonderProduct.html">Fisher's Water Wonder</a></h2>
+          <p>Bring pictures to life with virtual water painting! Kids can reveal colorful surprises or create their own designs in a creative, mess-free experience inspired by classic water reveal books.</p>
+        </div>
       </div>
     </section>
   </main>

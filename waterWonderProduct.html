@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products – Fiskurs Nest</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+  .breadcrumb {
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0 0 1rem 0;
+    font-size: 0.85rem;
+    color: #555;
+    font-family: Arial, sans-serif;
+  }
+
+  .breadcrumb li::after {
+    content: "›"; /* separator */
+    margin: 0 0.5rem;
+    color: #999;
+  }
+
+  .breadcrumb li:last-child::after {
+    content: "";
+  }
+
+  .breadcrumb a {
+    text-decoration: none;
+    color: #007bff;
+  }
+
+  .breadcrumb a:hover {
+    text-decoration: underline;
+  }
+  
+  .product-section {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .product-text {
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .product-images {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .product-images img {
+      width: 100%;
+      max-width: 180px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      object-fit: contain;
+    }
+
+    .product-heading {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .product-heading img {
+      width: 64px;
+      height: 64px;
+    }
+
+    @media (max-width: 768px) {
+      .product-heading img {
+        width: 48px;
+        height: 48px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html">
+      <img src="fiskur-logo-no-txt.png" alt="Fiskurs Nest logo" />
+    </a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li><a href="products.html">Products</a></li>
+          <li>Water Wonder</li>
+        </ol>
+      </nav>
+     </section>
+
+    <section class="product-section">
+      <div class="product-text">
+        <div class="product-heading">
+          <img src="WaterWonderImages/waterreveal.png" alt="Water Wonder App Icon" />
+          <h2>Fiskur's Water Wonder</h2>
+        </div>
+        <p>
+          Dive into the magical world of colors and creativity with Water Wonder!<br><br>
+          Kids can explore two exciting modes: <strong>Water Reveal</strong>, where they magically uncover hidden images with a splash of water, and <strong>Water Color</strong>, where they can finger-paint and bring bold illustrations to life. Every interaction reveals something new and sparks imagination.
+        </p>
+        <p>
+          The app is designed for endless creative fun. Children can select their favorite characters, choose from playful props, and discover vibrant settings, from enchanted forests to outer space adventures. Each story and artwork becomes a unique creation, encouraging exploration, learning, and artistic expression.
+        </p>
+        <ul>
+          <li>Interactive Water Reveal mode to uncover hidden illustrations</li>
+          <li>Water Color mode for finger painting with dynamic color blending</li>
+          <li>Customizable characters, props, and settings for endless fun</li>
+          <li>Encourages imagination, creativity, and storytelling skills</li>
+          <li>Safe, ad-free environment designed for kids</li>
+        </ul>
+      </div>
+      <div class="product-images">
+        <img src="WaterWonderImages/waterWonder_1.jpg" alt="Water Wonder Screenshot 1" />
+        <img src="WaterWonderImages/waterWonder_2.jpg" alt="Water Wonder Screenshot 2" />
+        <img src="WaterWonderImages/waterWonder_3.jpg" alt="Water Wonder Screenshot 3" />
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; Fiskurs Nest LLC – Imagination. Discovery. Wonder.
+  </footer>
+</body>
+</html>
